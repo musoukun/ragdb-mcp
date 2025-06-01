@@ -34,6 +34,7 @@
 手動インストールの場合、VS CodeのUser Settings (JSON)ファイルに以下のJSONブロックを追加してください。`Ctrl + Shift + P`を押して`Preferences: Open User Settings (JSON)`と入力することで設定ファイルを開けます。
 
 そのほかのDBの例は、jsonフォルダのサンプルをご覧ください。
+INDEXについてはデフォルトでdocumentsを設定していて、必要に応じて追加してください。
 
 ```json
 {
@@ -52,7 +53,7 @@
                 "RAG_CHUNK_OVERLAP": "50",
                 "RAG_TOP_K": "5",
                 "RAG_STRATEGY": "markdown",
-                "AUTO_CREATE_INDEXES": "documents,technical", // defalut: documents 必要に応じて追加してください。
+                "AUTO_CREATE_INDEXES": "documents,technical", 
                 "LOG_LEVEL": "info"
             }
         }
