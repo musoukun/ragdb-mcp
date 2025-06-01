@@ -2,7 +2,7 @@
 	"mcpServers": {
 		"rag-libsql-openai-large": {
 			"command": "node",
-			"args": ["D:/develop/rag-mcp/dist/index.js"],
+			"args": ["your-ragdb-mcp-path/rag-mcp/dist/index.js"],
 			"env": {
 				"RAG_DATABASE_TYPE": "libsql",
 				"RAG_CONNECTION_URL": "file:./rag.db",

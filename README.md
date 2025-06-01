@@ -39,10 +39,10 @@
 	"mcpServers": {
 		"rag-server": {
 			"command": "node",
-			"args": ["D:/develop/rag-mcp/dist/index.js"],
+			"args": ["your-ragdb-mcp-path/rag-mcp/dist/index.js"],
 			"env": {
 				"RAG_DATABASE_TYPE": "libsql",
-				"RAG_CONNECTION_URL": "file:D:/develop/rag-mcp/libsql/rag.db",
+				"RAG_CONNECTION_URL": "file:your-ragdb-mcp-path/rag-mcp/libsql/rag.db",
 				"EMBEDDING_PROVIDER": "google",
 				"EMBEDDING_MODEL": "text-embedding-004",
 				"EMBEDDING_API_KEY": "your-google-api-key",

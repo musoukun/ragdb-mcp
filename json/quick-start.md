@@ -40,7 +40,7 @@ copy json\claude-desktop-libsql-openai-small.json %APPDATA%\Claude\claude_deskto
 ### ステップ 4: サーバーをビルド 🔨
 
 ```bash
-cd D:/develop/rag-mcp
+cd your-ragdb-mcp-path/rag-mcp
 npm run build
 ```
 
