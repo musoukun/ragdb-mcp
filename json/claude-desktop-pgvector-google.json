@@ -1,0 +1,23 @@
+{
+	"mcpServers": {
+		"rag-pgvector-google": {
+			"command": "node",
+			"args": ["D:/develop/rag-mcp/dist/index.js"],
+			"env": {
+				"RAG_DATABASE_TYPE": "pgvector",
+				"RAG_CONNECTION_STRING": "postgresql://username:password@localhost:5432/ragdb",
+				"EMBEDDING_PROVIDER": "google",
+				"EMBEDDING_MODEL": "text-embedding-004",
+				"EMBEDDING_API_KEY": "your-google-api-key-here",
+				"EMBEDDING_DIMENSIONS": "768",
+				"AUTO_CREATE_INDEXES": "documents,technical,knowledge",
+				"RAG_CHUNK_SIZE": "512",
+				"RAG_CHUNK_OVERLAP": "50",
+				"RAG_TOP_K": "5",
+				"LOG_LEVEL": "info",
+				"DUPLICATE_CHECK_ENABLED": "true",
+				"DUPLICATE_THRESHOLD": "0.9"
+			}
+		}
+	}
+}

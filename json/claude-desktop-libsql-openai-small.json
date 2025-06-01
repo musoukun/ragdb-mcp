@@ -1,0 +1,23 @@
+{
+	"mcpServers": {
+		"rag-libsql-openai-small": {
+			"command": "node",
+			"args": ["D:/develop/rag-mcp/dist/index.js"],
+			"env": {
+				"RAG_DATABASE_TYPE": "libsql",
+				"RAG_CONNECTION_URL": "file:./rag.db",
+				"EMBEDDING_PROVIDER": "openai",
+				"EMBEDDING_MODEL": "text-embedding-3-small",
+				"EMBEDDING_API_KEY": "sk-your-openai-api-key-here",
+				"EMBEDDING_DIMENSIONS": "1536",
+				"AUTO_CREATE_INDEXES": "documents,technical,knowledge",
+				"RAG_CHUNK_SIZE": "512",
+				"RAG_CHUNK_OVERLAP": "50",
+				"RAG_TOP_K": "5",
+				"LOG_LEVEL": "info",
+				"DUPLICATE_CHECK_ENABLED": "true",
+				"DUPLICATE_THRESHOLD": "0.9"
+			}
+		}
+	}
+}
