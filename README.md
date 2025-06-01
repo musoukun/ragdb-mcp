@@ -27,7 +27,7 @@
 
 ### 前提条件
 
--   Docker環境（推奨）
+-   PgvectorやQdrantを利用する場合はDocker環境をお勧めします。
 -   埋め込みプロバイダーのAPIキー（OpenAI または Google）
 
 ### VS Codeでの使用
