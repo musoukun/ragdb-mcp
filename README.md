@@ -25,7 +25,8 @@
 
 ### 前提条件
 
--   PgvectorやQdrantを利用する場合はDocker環境をお勧めします。
+-   libsqlを利用する場合は、libsqlのデータベースファイルが自動作成されます。
+-   PgvectorやQdrantを利用する場合はDBサーバーが必要です。（Docker環境をお勧めします。）
 -   埋め込みプロバイダーのAPIキー（OpenAI または Google）
 
 ### VS CodeおよびClaude Desktopでの使用
