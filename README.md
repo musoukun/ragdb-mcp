@@ -30,7 +30,7 @@
 -   PgvectorやQdrantを利用する場合はDocker環境をお勧めします。
 -   埋め込みプロバイダーのAPIキー（OpenAI または Google）
 
-### VS Codeでの使用
+### VS CodeおよびClaude Desktopでの使用
 
 手動インストールの場合、VS CodeのUser Settings (JSON)ファイルに以下のJSONブロックを追加してください。`Ctrl + Shift + P`を押して`Preferences: Open User Settings (JSON)`と入力することで設定ファイルを開けます。
 
@@ -51,31 +51,8 @@
                 "RAG_CHUNK_OVERLAP": "50",
                 "RAG_TOP_K": "5",
                 "RAG_STRATEGY": "markdown",
-                "AUTO_CREATE_INDEXES": "documents,technical",
+                "AUTO_CREATE_INDEXES": "documents,technical", // defalut: documents 必要に応じて追加してください。
                 "LOG_LEVEL": "info"
-            }
-        }
-    }
-}
-```
-
-### Claude Desktopでの使用
-
-```json
-{
-    "mcpServers": {
-        "rag-mcp": {
-            "command": "npx",
-            "args": ["rag-mcp-server"],
-            "env": {
-                "RAG_DATABASE_TYPE": "libsql",
-                "RAG_CONNECTION_URL": "./rag-database.db",
-                "EMBEDDING_PROVIDER": "openai",
-                "EMBEDDING_MODEL": "text-embedding-3-small",
-                "EMBEDDING_API_KEY": "<YOUR_OPENAI_API_KEY>",
-                "RAG_CHUNK_SIZE": "512",
-                "RAG_CHUNK_OVERLAP": "50",
-                "RAG_TOP_K": "5"
             }
         }
     }
