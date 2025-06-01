@@ -36,26 +36,26 @@
 
 ```json
 {
-	"mcpServers": {
-		"rag-server": {
-			"command": "node",
-			"args": ["your-ragdb-mcp-path/rag-mcp/dist/index.js"],
-			"env": {
-				"RAG_DATABASE_TYPE": "libsql",
-				"RAG_CONNECTION_URL": "file:your-ragdb-mcp-path/rag-mcp/libsql/rag.db",
-				"EMBEDDING_PROVIDER": "google",
-				"EMBEDDING_MODEL": "text-embedding-004",
-				"EMBEDDING_API_KEY": "your-google-api-key",
-				"EMBEDDING_DIMENSIONS": "768",
-				"RAG_CHUNK_SIZE": "512",
-				"RAG_CHUNK_OVERLAP": "50",
-				"RAG_TOP_K": "5",
-				"RAG_STRATEGY": "markdown",
-				"AUTO_CREATE_INDEXES": "documents,technical",
-				"LOG_LEVEL": "info"
-			}
-		}
-	}
+    "mcpServers": {
+        "rag-server": {
+            "command": "node",
+            "args": ["your-ragdb-mcp-path/rag-mcp/dist/index.js"],
+            "env": {
+                "RAG_DATABASE_TYPE": "libsql",
+                "RAG_CONNECTION_URL": "file:your-ragdb-mcp-path/rag-mcp/libsql/rag.db",
+                "EMBEDDING_PROVIDER": "google",
+                "EMBEDDING_MODEL": "text-embedding-004",
+                "EMBEDDING_API_KEY": "your-google-api-key",
+                "EMBEDDING_DIMENSIONS": "768",
+                "RAG_CHUNK_SIZE": "512",
+                "RAG_CHUNK_OVERLAP": "50",
+                "RAG_TOP_K": "5",
+                "RAG_STRATEGY": "markdown",
+                "AUTO_CREATE_INDEXES": "documents,technical",
+                "LOG_LEVEL": "info"
+            }
+        }
+    }
 }
 ```
 
@@ -63,22 +63,22 @@
 
 ```json
 {
-	"mcpServers": {
-		"rag-mcp": {
-			"command": "npx",
-			"args": ["rag-mcp-server"],
-			"env": {
-				"RAG_DATABASE_TYPE": "libsql",
-				"RAG_CONNECTION_URL": "./rag-database.db",
-				"EMBEDDING_PROVIDER": "openai",
-				"EMBEDDING_MODEL": "text-embedding-3-small",
-				"EMBEDDING_API_KEY": "<YOUR_OPENAI_API_KEY>",
-				"RAG_CHUNK_SIZE": "512",
-				"RAG_CHUNK_OVERLAP": "50",
-				"RAG_TOP_K": "5"
-			}
-		}
-	}
+    "mcpServers": {
+        "rag-mcp": {
+            "command": "npx",
+            "args": ["rag-mcp-server"],
+            "env": {
+                "RAG_DATABASE_TYPE": "libsql",
+                "RAG_CONNECTION_URL": "./rag-database.db",
+                "EMBEDDING_PROVIDER": "openai",
+                "EMBEDDING_MODEL": "text-embedding-3-small",
+                "EMBEDDING_API_KEY": "<YOUR_OPENAI_API_KEY>",
+                "RAG_CHUNK_SIZE": "512",
+                "RAG_CHUNK_OVERLAP": "50",
+                "RAG_TOP_K": "5"
+            }
+        }
+    }
 }
 ```
 
